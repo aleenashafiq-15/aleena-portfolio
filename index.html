@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleena Shafiq | Frontend Developer & UI/UX Designer</title>
+  
+  <!-- Meta / SEO -->
+  <meta name="description" content="Portfolio of Aleena Shafiq, a Frontend Developer and UI/UX Designer creating modern, responsive and user-focused digital experiences.">
+  <meta name="keywords" content="Aleena Shafiq, Frontend Developer, UI/UX Designer, Web Developer, Figma, Bootstrap, JavaScript, Responsive Design, Portfolio">
+  <meta name="author" content="Aleena Shafiq">
+  <meta name="theme-color" content="#030015">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Aleena Shafiq | Frontend Developer & UI/UX Designer">
+  <meta property="og:description" content="Portfolio of Aleena Shafiq, a Frontend Developer and UI/UX Designer creating modern, responsive and user-focused digital experiences.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon (Futuristic AS Monogram) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23713CFF'/><stop offset='100%25' stop-color='%2300BFFF'/></linearGradient></defs><rect width='100' height='100' rx='25' fill='%23080025'/><text x='50' y='65' font-family='sans-serif' font-weight='800' font-size='44' fill='url(%23g)' text-anchor='middle'>AS</text></svg>">
+
+  <!-- Google Fonts: Space Grotesk, Inter, Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- ================= PRELOADER ================= -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-ambient"></div>
+    <div class="preloader-content">
+      <div class="preloader-badge">
+        <i class="fa-solid fa-code"></i> SYSTEM INITIALIZING
+      </div>
+      <h1 class="preloader-title">ALEENA SHAFIQ</h1>
+      <p class="preloader-subtitle">FRONTEND DEVELOPER &bull; UI/UX DESIGNER</p>
+      
+      <div class="preloader-progress-wrap">
+        <div id="preloader-bar" class="preloader-progress-bar"></div>
+      </div>
+      
+      <div class="preloader-stats">
+        <span>LOADING ASSETS</span>
+        <span id="preloader-percentage" class="preloader-percent">00%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom Interactive Cursor -->
+  <div id="custom-cursor" class="custom-cursor"></div>
+  <div id="custom-cursor-dot" class="custom-cursor-dot"></div>
+
+  <!-- ================= AMBIENT BACKGROUND GLOWS & GRID ================= -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-blob ambient-blob-1"></div>
+    <div class="ambient-blob ambient-blob-2"></div>
+    <div class="ambient-blob ambient-blob-3"></div>
+    <div class="ambient-blob ambient-blob-4"></div>
+  </div>
+  <div class="cyber-grid" aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ================= MAIN CONTENT WRAPPER ================= -->
+  <div class="content-wrapper">
+
+    <!-- ================= FLOATING NAVIGATION ================= -->
+    <nav class="navbar navbar-expand-lg navbar-custom" id="mainNav">
+      <div class="container-fluid px-0">
+        <!-- Logo -->
+        <a class="navbar-brand-custom" href="#home">
+          <span class="brand-avatar">AS</span>
+          <span class="brand-text">ALEENA SHAFIQ</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Nav Items -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom active" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#skills">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#projects">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#experience">EXPERIENCE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#education">EDUCATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+
+          <!-- CTA Button -->
+          <div class="d-flex align-items-center">
+            <a href="#contact" class="btn-primary-futuristic navbar-cta-btn">
+              LET'S TALK <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <header id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          
+          <!-- Hero Text Column -->
+          <div class="col-lg-7">
+            <div class="hero-status-badge">
+              <span class="hero-status-pulse"></span>
+              <span>OPEN TO OPPORTUNITIES</span>
+            </div>
+
+            <div class="hero-intro-text">
+              HELLO, I'M
+            </div>
+
+            <h1 class="hero-name">
+              ALEENA SHAFIQ
+            </h1>
+
+            <h2 class="hero-roles">
+              <span class="gradient-text-purple-blue">FRONTEND DEVELOPER</span><br>
+              &amp; <span class="gradient-text-cyan">UI/UX DESIGNER</span>
+            </h2>
+
+            <p class="hero-description">
+              A motivated and adaptable developer and UI/UX designer passionate about creating modern, responsive and user-focused digital experiences.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#projects" class="btn-primary-futuristic">
+                VIEW MY PROJECTS <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a href="#contact" class="btn-outline-futuristic">
+                CONTACT ME <i class="fa-regular fa-paper-plane"></i>
+              </a>
+            </div>
+
+            <!-- Quick highlight badges -->
+            <div class="hero-highlights-row">
+              <div class="hero-highlight-pill">
+                <i class="fa-solid fa-bolt"></i> 100% Responsive Design
+              </div>
+              <div class="hero-highlight-pill">
+                <i class="fa-brands fa-figma"></i> Figma Prototyping
+              </div>
+              <div class="hero-highlight-pill">
+                <i class="fa-solid fa-code"></i> Clean Frontend Code
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Developer Window Mockup -->
+          <div class="col-lg-5">
+            <div class="hero-visual-container">
+              <!-- Floating Top Badge -->
+              <div class="floating-badge badge-top-right">
+                <i class="fa-brands fa-figma text-info"></i>
+                <span>Interactive Prototyping</span>
+              </div>
+
+              <!-- Main Code Window -->
+              <div class="code-mockup-wrapper">
+                <div class="mockup-header">
+                  <div class="mockup-controls">
+                    <span class="mockup-dot red"></span>
+                    <span class="mockup-dot yellow"></span>
+                    <span class="mockup-dot green"></span>
+                  </div>
+                  <div class="mockup-tabs">
+                    <span class="mockup-tab active"><i class="fa-brands fa-js text-warning"></i> Developer.js</span>
+                    <span class="mockup-tab"><i class="fa-solid fa-palette text-info"></i> style.css</span>
+                  </div>
+                  <span class="mockup-badge-live">● RUNNING</span>
+                </div>
+
+                <div class="mockup-body">
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">1</span>
+                    <code><span class="syntax-keyword">const</span> <span class="syntax-var">developer</span> = {</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">2</span>
+                    <code>&nbsp;&nbsp;<span class="syntax-property">name:</span> <span class="syntax-string">'Aleena Shafiq'</span>,</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">3</span>
+                    <code>&nbsp;&nbsp;<span class="syntax-property">role:</span> <span class="syntax-string">'Frontend Dev &amp; UI/UX'</span>,</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">4</span>
+                    <code>&nbsp;&nbsp;<span class="syntax-property">coreStack:</span> [</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">5</span>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">'HTML5'</span>, <span class="syntax-string">'CSS3'</span>, <span class="syntax-string">'JavaScript'</span>,</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">6</span>
+                    <code>&nbsp;&nbsp;&nbsp;&nbsp;<span class="syntax-string">'Bootstrap'</span>, <span class="syntax-string">'jQuery'</span>, <span class="syntax-string">'Figma'</span></code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">7</span>
+                    <code>&nbsp;&nbsp;],</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">8</span>
+                    <code>&nbsp;&nbsp;<span class="syntax-property">passion:</span> <span class="syntax-string">'Building intuitive, beautiful digital experiences'</span>,</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">9</span>
+                    <code>&nbsp;&nbsp;<span class="syntax-property">status:</span> <span class="syntax-highlight">'Available for Hire'</span></code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">10</span>
+                    <code>};</code>
+                  </div>
+                  <div class="mockup-line">
+                    <span class="mockup-line-num">11</span>
+                    <code><span class="syntax-var">developer</span>.<span class="syntax-func">createExperience</span>();</code>
+                  </div>
+                </div>
+
+                <div class="mockup-footer">
+                  <span><i class="fa-solid fa-circle-check"></i> UTF-8</span>
+                  <span>JavaScript (ES6+)</span>
+                  <span>Port: 3000 (Active)</span>
+                </div>
+              </div>
+
+              <!-- Floating Bottom Badge -->
+              <div class="floating-badge badge-bottom-left">
+                <i class="fa-solid fa-code text-primary"></i>
+                <span>Responsive Frontend Dev</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <!-- ================= ABOUT ME SECTION ================= -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-user"></i> ABOUT ME
+          </div>
+          <h2 class="section-title">
+            DESIGNING INTERFACES. <span class="gradient-text-purple-blue">BUILDING EXPERIENCES.</span>
+          </h2>
+          <p class="section-subtitle">A CLOSER LOOK AT MY BACKGROUND, VISION &amp; DEDICATION</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Left Column: Professional Narrative -->
+          <div class="col-lg-6 reveal-on-scroll delay-100">
+            <div class="glass-card h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="mb-4 text-white">
+                  Crafting Digital Products with <span class="gradient-text-cyan">Precision &amp; Purpose</span>
+                </h3>
+                <p class="about-narrative">
+                  A motivated and adaptable individual with experience in web development, UI/UX design, and teaching. Skilled in designing website interfaces and interactive prototypes using Figma, along with working knowledge of HTML, CSS, JavaScript, Bootstrap, WordPress, and other web technologies. Able to work collaboratively, manage tasks efficiently, and learn new skills to contribute positively to an organization.
+                </p>
+              </div>
+
+              <!-- Key Info Grid -->
+              <div class="about-info-grid">
+                <div class="about-info-item">
+                  <span class="about-info-label">Location</span>
+                  <span class="about-info-value"><i class="fa-solid fa-location-dot text-info me-1"></i> Karachi, Pakistan</span>
+                </div>
+                <div class="about-info-item">
+                  <span class="about-info-label">Current Education</span>
+                  <span class="about-info-value">Software Engineering (Aptech)</span>
+                </div>
+                <div class="about-info-item">
+                  <span class="about-info-label">Primary Discipline</span>
+                  <span class="about-info-value">Frontend &amp; UI/UX Design</span>
+                </div>
+                <div class="about-info-item">
+                  <span class="about-info-label">Collaboration</span>
+                  <span class="about-info-value">Team-Oriented &amp; Adaptable</span>
+                </div>
+              </div>
+
+              <div>
+                <a href="#contact" class="btn-sm-action btn-sm-action-primary">
+                  Get In Touch <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Highlight Cards -->
+          <div class="col-lg-6">
+            <div class="row g-3 h-100">
+              
+              <!-- Card 1 -->
+              <div class="col-sm-6 reveal-on-scroll delay-200">
+                <div class="glass-card highlight-card">
+                  <div class="highlight-icon-box">
+                    <i class="fa-solid fa-code"></i>
+                  </div>
+                  <h4 class="highlight-title">Frontend Development</h4>
+                  <p class="highlight-desc">
+                    Translating concepts into clean, maintainable, semantic code using HTML5, modern CSS3, JavaScript, jQuery, and Bootstrap.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="col-sm-6 reveal-on-scroll delay-300">
+                <div class="glass-card highlight-card">
+                  <div class="highlight-icon-box">
+                    <i class="fa-solid fa-pen-nib"></i>
+                  </div>
+                  <h4 class="highlight-title">UI/UX Design</h4>
+                  <p class="highlight-desc">
+                    Architecting intuitive user flows, responsive layouts, wireframes, and interactive high-fidelity prototypes in Figma.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="col-sm-6 reveal-on-scroll delay-400">
+                <div class="glass-card highlight-card">
+                  <div class="highlight-icon-box">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                  </div>
+                  <h4 class="highlight-title">Responsive Websites</h4>
+                  <p class="highlight-desc">
+                    Ensuring flawless responsiveness, fluid layouts, and cross-browser consistency across mobile phones, tablets, and desktops.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="col-sm-6 reveal-on-scroll delay-500">
+                <div class="glass-card highlight-card">
+                  <div class="highlight-icon-box">
+                    <i class="fa-solid fa-lightbulb"></i>
+                  </div>
+                  <h4 class="highlight-title">Creative Problem Solving</h4>
+                  <p class="highlight-desc">
+                    Merging technical logic with creative visual thinking to resolve complex user problems and elevate web experiences.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS & TECHNOLOGIES SECTION ================= -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-layer-group"></i> TECH STACK
+          </div>
+          <h2 class="section-title">
+            SKILLS &amp; <span class="gradient-text-purple-blue">TECHNOLOGIES</span>
+          </h2>
+          <p class="section-subtitle">THE TOOLS AND LANGUAGES I USE TO BUILD EXCEPTIONAL EXPERIENCES</p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Web Development -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-100">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="skill-category-title">WEB DEVELOPMENT</h3>
+              </div>
+              <div class="skill-badges-container">
+                <div class="tech-badge">
+                  <i class="fa-brands fa-html5 text-danger"></i> HTML5
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-brands fa-css3-alt text-primary"></i> CSS3
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-brands fa-js text-warning"></i> JavaScript
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-cubes text-info"></i> jQuery
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-brands fa-bootstrap text-purple"></i> Bootstrap
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- UI / UX -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-200">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <i class="fa-solid fa-bezier-curve"></i>
+                </div>
+                <h3 class="skill-category-title">UI / UX</h3>
+              </div>
+              <div class="skill-badges-container">
+                <div class="tech-badge">
+                  <i class="fa-brands fa-figma text-info"></i> Figma
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-wand-magic-sparkles text-warning"></i> Prototyping
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-display text-primary"></i> Responsive Web Design
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-swatchbook text-success"></i> Design Systems
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CMS -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-300">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <i class="fa-brands fa-wordpress"></i>
+                </div>
+                <h3 class="skill-category-title">CMS</h3>
+              </div>
+              <div class="skill-badges-container">
+                <div class="tech-badge">
+                  <i class="fa-brands fa-wordpress text-info"></i> WordPress
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-sliders text-primary"></i> Theme Customization
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-puzzle-piece text-warning"></i> Plugin Management
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Version Control -->
+          <div class="col-lg-6 col-md-6 reveal-on-scroll delay-400">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <h3 class="skill-category-title">VERSION CONTROL</h3>
+              </div>
+              <div class="skill-badges-container">
+                <div class="tech-badge">
+                  <i class="fa-brands fa-git-alt text-danger"></i> Git
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-brands fa-github text-light"></i> GitHub
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-code-commit text-info"></i> Collaborative Workflows
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design & Productivity -->
+          <div class="col-lg-6 col-md-12 reveal-on-scroll delay-500">
+            <div class="glass-card skill-category-card">
+              <div class="skill-category-header">
+                <div class="skill-category-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h3 class="skill-category-title">DESIGN &amp; PRODUCTIVITY</h3>
+              </div>
+              <div class="skill-badges-container">
+                <div class="tech-badge">
+                  <i class="fa-solid fa-paint-brush text-primary"></i> Canva AI
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-file-word text-info"></i> MS Word
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-file-powerpoint text-danger"></i> PowerPoint
+                </div>
+                <div class="tech-badge">
+                  <i class="fa-solid fa-file-excel text-success"></i> Excel
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROFESSIONAL STRENGTHS ================= -->
+    <section class="section-padding pt-0">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-shield-heart"></i> WORK ETHIC
+          </div>
+          <h2 class="section-title">
+            PROFESSIONAL <span class="gradient-text-cyan">STRENGTHS</span>
+          </h2>
+          <p class="section-subtitle">CORE ATTRIBUTES THAT DRIVE EXCELLENCE AND TEAM SUCCESS</p>
+        </div>
+
+        <div class="row g-3">
+          
+          <div class="col-lg-3 col-md-6 reveal-on-scroll delay-100">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-regular fa-comments"></i></div>
+              <div>
+                <h4 class="strength-title">Communication</h4>
+                <p class="strength-desc">Clear articulation of ideas, requirements, and design reasoning across cross-functional teams.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 reveal-on-scroll delay-200">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-people-group"></i></div>
+              <div>
+                <h4 class="strength-title">Teamwork &amp; Collaboration</h4>
+                <p class="strength-desc">Proven experience collaborating in group development and aligning toward shared milestones.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 reveal-on-scroll delay-300">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <h4 class="strength-title">Time Management</h4>
+                <p class="strength-desc">Disciplined planning and punctual delivery for project milestones and teaching schedules.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 reveal-on-scroll delay-400">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+              <div>
+                <h4 class="strength-title">Problem Solving</h4>
+                <p class="strength-desc">Analyzing technical bottlenecks and debugging issues with a methodical, calm mindset.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-100">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              <div>
+                <h4 class="strength-title">Creativity</h4>
+                <p class="strength-desc">Translating complex concepts into elegant, minimalist, and visually captivating UI designs.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-200">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-arrows-spin"></i></div>
+              <div>
+                <h4 class="strength-title">Adaptability</h4>
+                <p class="strength-desc">Swiftly mastering new frameworks, modern design patterns, and evolving workflow paradigms.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-12 reveal-on-scroll delay-300">
+            <div class="glass-card strength-card">
+              <div class="strength-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div>
+                <h4 class="strength-title">Attention to Detail</h4>
+                <p class="strength-desc">Pixel-perfect precision, consistent typography scales, and rigorous responsive quality assurance.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SELECTED PROJECTS SECTION ================= -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-laptop-code"></i> PORTFOLIO SHOWCASE
+          </div>
+          <h2 class="section-title">
+            SELECTED <span class="gradient-text-purple-blue">PROJECTS</span>
+          </h2>
+          <p class="section-subtitle">A SELECTION OF PROJECTS I'VE DESIGNED AND DEVELOPED</p>
+        </div>
+
+        <!-- ================= PROJECT 01 ================= -->
+        <div class="project-card-wrapper reveal-on-scroll">
+          <div class="project-card">
+            <div class="row g-5 align-items-center">
+              
+              <!-- Project Details (Left) -->
+              <div class="col-lg-6">
+                <div class="project-meta-top">
+                  <span class="project-number">PROJECT 01</span>
+                  <span class="project-badge-tag"><i class="fa-solid fa-users"></i> GROUP PROJECT</span>
+                </div>
+
+                <h3 class="project-title">ALPINE ASCENTS</h3>
+                <h4 class="project-tagline">The Complete Guide to Mountaineering &amp; Expeditions</h4>
+
+                <p class="project-description">
+                  A responsive mountaineering and expedition website developed as a collaborative web development project. Engineered to provide mountaineers with detailed route guides, expedition logs, equipment checklists, and seamless booking navigation.
+                </p>
+
+                <!-- My Contribution -->
+                <div class="project-contribution-box">
+                  <div class="contribution-header">
+                    <i class="fa-solid fa-user-check"></i> MY CONTRIBUTION
+                  </div>
+                  <p class="contribution-text">
+                    Independently designed the complete UI/UX in Figma and created the interactive prototype. Contributed to website functionality, layout and overall user experience.
+                  </p>
+                </div>
+
+                <!-- Technologies -->
+                <div class="project-tech-stack">
+                  <div class="project-tech-title">TECHNOLOGIES USED</div>
+                  <div class="project-tech-pills">
+                    <span class="project-pill">HTML5</span>
+                    <span class="project-pill">CSS3</span>
+                    <span class="project-pill">JavaScript</span>
+                    <span class="project-pill">Bootstrap</span>
+                    <span class="project-pill">JSON</span>
+                    <span class="project-pill">Figma</span>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="project-actions">
+                  <a href="hhttps://alpineascents-three.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sm-action btn-sm-action-primary">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> LIVE WEBSITE
+                  </a>
+                  <a href="https://ebook-parse74608362.figma.site/#spaSection" target="_blank" rel="noopener noreferrer" class="btn-sm-action btn-sm-action-outline">
+                    <i class="fa-brands fa-figma"></i> FIGMA PROTOTYPE
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project Mockup (Right) -->
+              <div class="col-lg-6">
+                <div class="browser-mockup">
+                  <div class="browser-mockup-header">
+                    <div class="browser-dots">
+                      <span class="browser-dot red"></span>
+                      <span class="browser-dot yellow"></span>
+                      <span class="browser-dot green"></span>
+                    </div>
+                    <div class="browser-url-bar">
+                      <i class="fa-solid fa-lock text-success"></i> alpineascents-three.vercel.app
+                    </div>
+                  </div>
+                  <div class="browser-preview-img-wrap">
+                    <img src="assets/images/alpine_ascents.jpg" alt="Alpine Ascents Mountaineering and Expeditions Website Preview" class="browser-preview-img" loading="lazy">
+                    <div class="preview-overlay"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= PROJECT 02 ================= -->
+        <div class="project-card-wrapper reveal-on-scroll">
+          <div class="project-card">
+            <div class="row g-5 align-items-center">
+              
+              <!-- Project Details (Left) -->
+              <div class="col-lg-6 order-lg-1 order-2">
+                <div class="project-meta-top">
+                  <span class="project-number">PROJECT 02</span>
+                  <span class="project-badge-tag"><i class="fa-solid fa-users"></i> GROUP PROJECT</span>
+                </div>
+
+                <h3 class="project-title">PET CARE WEBSITE</h3>
+                <h4 class="project-tagline">Modern Veterinary, Wellness &amp; Adoption Portal</h4>
+
+                <p class="project-description">
+                  A responsive pet care website created as a collaborative web development project with a focus on clean interface design and user-friendly presentation. Features pet health profiles, appointment consultations, vaccination tracking, and community resources.
+                </p>
+
+                <!-- My Contribution -->
+                <div class="project-contribution-box">
+                  <div class="contribution-header">
+                    <i class="fa-solid fa-user-check"></i> MY CONTRIBUTION
+                  </div>
+                  <p class="contribution-text">
+                    Worked on the interface, layout, visual structure, responsive presentation and overall user experience.
+                  </p>
+                </div>
+
+                <!-- Technologies -->
+                <div class="project-tech-stack">
+                  <div class="project-tech-title">TECHNOLOGIES USED</div>
+                  <div class="project-tech-pills">
+                    <span class="project-pill">HTML5</span>
+                    <span class="project-pill">CSS3</span>
+                    <span class="project-pill">JavaScript</span>
+                    <span class="project-pill">Bootstrap</span>
+                  </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="project-actions">
+                  <a href="https://techwiz-team-synergy-kohl.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-sm-action btn-sm-action-primary">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> LIVE WEBSITE
+                  </a>
+                </div>
+              </div>
+
+              <!-- Project Mockup (Right) -->
+              <div class="col-lg-6 order-lg-2 order-1">
+                <div class="browser-mockup">
+                  <div class="browser-mockup-header">
+                    <div class="browser-dots">
+                      <span class="browser-dot red"></span>
+                      <span class="browser-dot yellow"></span>
+                      <span class="browser-dot green"></span>
+                    </div>
+                    <div class="browser-url-bar">
+                      <i class="fa-solid fa-lock text-success"></i> techwiz-team-synergykohl.vercel.app
+                    </div>
+                  </div>
+                  <div class="browser-preview-img-wrap">
+                    <img src="assets/images/pet_care.jpg" alt="Pet Care Modern Responsive Website Preview" class="browser-preview-img" loading="lazy">
+                    <div class="preview-overlay"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= WHY WORK WITH ME ================= -->
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-handshake"></i> RECRUITER VALUE
+          </div>
+          <h2 class="section-title">
+            WHY WORK <span class="gradient-text-cyan">WITH ME</span>
+          </h2>
+          <p class="section-subtitle">THE VALUE AND PERSPECTIVE I BRING TO YOUR DEVELOPMENT TEAM</p>
+        </div>
+
+        <div class="row g-4">
+          
+          <div class="col-lg-6 reveal-on-scroll delay-100">
+            <div class="glass-card why-card">
+              <div class="why-card-top">
+                <span class="why-number">01</span>
+                <div class="why-icon"><i class="fa-solid fa-heart"></i></div>
+              </div>
+              <h3 class="why-title">USER-FOCUSED DESIGN</h3>
+              <p class="why-text">
+                I focus on creating clean and intuitive interfaces that provide a better user experience. Every button, interaction, and visual element is placed with intentional ergonomics.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal-on-scroll delay-200">
+            <div class="glass-card why-card">
+              <div class="why-card-top">
+                <span class="why-number">02</span>
+                <div class="why-icon"><i class="fa-solid fa-laptop-mobile"></i></div>
+              </div>
+              <h3 class="why-title">RESPONSIVE DEVELOPMENT</h3>
+              <p class="why-text">
+                I build websites that adapt smoothly across desktop, tablet and mobile devices. Fluid layouts, flexible media, and robust breakpoints guarantee universal elegance.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal-on-scroll delay-300">
+            <div class="glass-card why-card">
+              <div class="why-card-top">
+                <span class="why-number">03</span>
+                <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              </div>
+              <h3 class="why-title">CREATIVE PROBLEM SOLVING</h3>
+              <p class="why-text">
+                I combine design thinking and development skills to solve digital problems creatively. Bridging the gap between aesthetic vision and technical execution is my signature strength.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal-on-scroll delay-400">
+            <div class="glass-card why-card">
+              <div class="why-card-top">
+                <span class="why-number">04</span>
+                <div class="why-icon"><i class="fa-solid fa-users-gear"></i></div>
+              </div>
+              <h3 class="why-title">TEAM COLLABORATION</h3>
+              <p class="why-text">
+                I have experience working on group projects and contributing effectively to shared goals. Clear communication, mutual respect, and active task ownership are central to my process.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WORK EXPERIENCE ================= -->
+    <section id="experience" class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-timeline"></i> TRACK RECORD
+          </div>
+          <h2 class="section-title">
+            WORK <span class="gradient-text-purple-blue">EXPERIENCE</span>
+          </h2>
+          <p class="section-subtitle">PROFESSIONAL ROLES DEVELOPING RESPONSIBILITY AND COMMUNICATION</p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Experience Item 1 -->
+          <div class="timeline-item reveal-on-scroll delay-100">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">HOME TUTOR</h3>
+                <span class="timeline-duration">3 YEARS</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Provided personalized academic support tailored to individual learning paces and styles.</li>
+                <li>Developed strong communication skills by translating complex concepts into easily digestible lessons.</li>
+                <li>Managed schedules and responsibilities with high punctuality, organization, and consistency.</li>
+                <li>Improved problem-solving and organization through customized curriculum planning and progress tracking.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Experience Item 2 -->
+          <div class="timeline-item reveal-on-scroll delay-200">
+            <div class="timeline-node"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-header">
+                <h3 class="timeline-role">SCHOOL TEACHER</h3>
+                <span class="timeline-duration">6 MONTHS</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Planned structured lessons aligned with curriculum goals and pedagogical best practices.</li>
+                <li>Managed classroom activities and fostered dynamic, respectful student collaboration.</li>
+                <li>Communicated with students, faculty, and parents effectively to address academic and developmental needs.</li>
+                <li>Created a positive, stimulating learning environment encouraging curiosity and active participation.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION SECTION ================= -->
+    <section id="education" class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-graduation-cap"></i> ACADEMIC BACKGROUND
+          </div>
+          <h2 class="section-title">
+            <span class="gradient-text-cyan">EDUCATION</span>
+          </h2>
+          <p class="section-subtitle">FOUNDATIONAL LEARNING AND TECHNICAL SOFTWARE ENGINEERING STUDIES</p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Education 1 -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-100">
+            <div class="glass-card education-card">
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3 class="education-title">DIPLOMA IN SOFTWARE ENGINEERING</h3>
+              <p class="education-institution">Aptech, Karachi</p>
+              <span class="education-status-tag status-in-progress">
+                <i class="fa-solid fa-spinner fa-spin me-1"></i> In Progress
+              </span>
+            </div>
+          </div>
+
+          <!-- Education 2 -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-200">
+            <div class="glass-card education-card">
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-atom"></i>
+              </div>
+              <h3 class="education-title">INTERMEDIATE</h3>
+              <p class="education-institution">Pre-Engineering</p>
+              <span class="education-status-tag status-completed">
+                <i class="fa-solid fa-check me-1"></i> Completed
+              </span>
+            </div>
+          </div>
+
+          <!-- Education 3 -->
+          <div class="col-lg-4 col-md-12 reveal-on-scroll delay-300">
+            <div class="glass-card education-card">
+              <div class="edu-icon-badge">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="education-title">MATRICULATION</h3>
+              <p class="education-institution">Computer Science</p>
+              <span class="education-status-tag status-completed">
+                <i class="fa-solid fa-check me-1"></i> Completed
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= MY WORK PROCESS ================= -->
+    <section class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-diagram-project"></i> METHODOLOGY
+          </div>
+          <h2 class="section-title">
+            HOW I <span class="gradient-text-purple-blue">WORK</span>
+          </h2>
+          <p class="section-subtitle">MY 5-STEP END-TO-END DEVELOPMENT AND DESIGN PROCESS</p>
+        </div>
+
+        <div class="row g-4 process-grid">
+          
+          <!-- Step 1 -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-100">
+            <div class="glass-card process-card">
+              <div class="process-step-num">01</div>
+              <h3 class="process-title">DISCOVER</h3>
+              <p class="process-desc">
+                Understand the goal, audience and requirements. Deeply analyze user expectations and project objectives before writing a line of code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-200">
+            <div class="glass-card process-card">
+              <div class="process-step-num">02</div>
+              <h3 class="process-title">PLAN</h3>
+              <p class="process-desc">
+                Create structure, user flow and content direction. Outline information architecture, component hierarchies, and responsive blueprints.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="col-lg-4 col-md-6 reveal-on-scroll delay-300">
+            <div class="glass-card process-card">
+              <div class="process-step-num">03</div>
+              <h3 class="process-title">DESIGN</h3>
+              <p class="process-desc">
+                Create UI concepts and prototypes using Figma. Craft typography, color palettes, micro-interactions, and clickable design prototypes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="col-lg-6 col-md-6 reveal-on-scroll delay-400">
+            <div class="glass-card process-card">
+              <div class="process-step-num">04</div>
+              <h3 class="process-title">DEVELOP</h3>
+              <p class="process-desc">
+                Build responsive interfaces using HTML, CSS, JavaScript, jQuery and Bootstrap. Translate prototypes into pixel-perfect, clean, and accessible code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="col-lg-6 col-md-12 reveal-on-scroll delay-500">
+            <div class="glass-card process-card">
+              <div class="process-step-num">05</div>
+              <h3 class="process-title">REFINE</h3>
+              <p class="process-desc">
+                Test, improve responsiveness and polish the final experience. Perform multi-device testing, speed audits, and interactive refinements.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        
+        <div class="text-center mb-5 reveal-on-scroll">
+          <div class="section-tag">
+            <i class="fa-solid fa-envelope"></i> GET IN TOUCH
+          </div>
+          <h2 class="section-title">
+            LET'S BUILD SOMETHING <span class="gradient-text-purple-blue">GREAT TOGETHER.</span>
+          </h2>
+          <p class="section-subtitle">HAVE A PROJECT, OPPORTUNITY OR IDEA IN MIND? I'D LOVE TO CONNECT.</p>
+        </div>
+
+        <div class="row g-5 align-items-stretch">
+          
+          <!-- Contact Left: Channels & Info -->
+          <div class="col-lg-5 reveal-on-scroll delay-100">
+            <div class="glass-card contact-info-card">
+              <div>
+                <h3 class="contact-info-headline">Let's Connect</h3>
+                <p class="contact-info-sub">
+                  Have a project, opportunity or idea in mind? I'd love to connect and create something meaningful. Whether you are looking for a frontend developer, UI/UX designer, or collaborative partner, my inbox is always open.
+                </p>
+              </div>
+
+              <div class="contact-channel-list">
+                <!-- Location -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                  <div>
+                    <div class="contact-channel-label">Location</div>
+                    <div class="contact-channel-val">Karachi, Pakistan</div>
+                  </div>
+                </div>
+
+                <!-- Status -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon"><i class="fa-solid fa-briefcase"></i></div>
+                  <div>
+                    <div class="contact-channel-label">Opportunity Status</div>
+                    <div class="contact-channel-val text-success">Open to Full-time &amp; Internships</div>
+                  </div>
+                </div>
+
+                <!-- Response Time -->
+                <div class="contact-channel-item">
+                  <div class="contact-channel-icon"><i class="fa-regular fa-clock"></i></div>
+                  <div>
+                    <div class="contact-channel-label">Typical Response Time</div>
+                    <div class="contact-channel-val">Within 24 Hours</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div>
+                <div class="contact-channel-label mb-2">Social &amp; Professional Profiles</div>
+                <div class="social-links-row">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://ebook-parse74608362.figma.site/#spaSection" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Figma Profile">
+                    <i class="fa-brands fa-figma"></i>
+                  </a>
+                  <a href="mailto:aleena.shafiq@example.com" class="social-btn" aria-label="Send Email">
+                    <i class="fa-regular fa-envelope"></i>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Contact Right: Contact Form -->
+          <div class="col-lg-7 reveal-on-scroll delay-200">
+            <div class="glass-card">
+              
+              <!-- Form Success Feedback -->
+              <div id="contact-success-alert" class="form-status-alert success" role="alert">
+                <i class="fa-solid fa-circle-check me-2"></i> Thank you! Your message has been received. I will get back to you shortly.
+              </div>
+
+              <form id="portfolio-contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-group-custom">
+                      <label for="contact-name" class="form-label-custom">Your Name</label>
+                      <input type="text" class="form-control-custom" id="contact-name" placeholder="e.g. John Doe" required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group-custom">
+                      <label for="contact-email" class="form-label-custom">Email Address</label>
+                      <input type="email" class="form-control-custom" id="contact-email" placeholder="e.g. john@company.com" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group-custom">
+                  <label for="contact-subject" class="form-label-custom">Subject</label>
+                  <input type="text" class="form-control-custom" id="contact-subject" placeholder="Project Inquiry / Job Opportunity" required>
+                </div>
+
+                <div class="form-group-custom">
+                  <label for="contact-message" class="form-label-custom">Message</label>
+                  <textarea class="form-control-custom" id="contact-message" rows="5" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+                </div>
+
+                <button type="submit" id="contact-submit-btn" class="btn-primary-futuristic w-100 mt-2">
+                  <span>SEND MESSAGE ↗</span>
+                </button>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer-custom">
+      <div class="container">
+        <div class="row g-4 justify-content-between">
+          
+          <div class="col-lg-5 col-md-6">
+            <h3 class="footer-brand-title">ALEENA SHAFIQ</h3>
+            <div class="footer-subtitle">Frontend Developer &amp; UI/UX Designer</div>
+            <p class="footer-quote">
+              "Designing interfaces. Building digital experiences."
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-nav-title">QUICK NAVIGATION</div>
+            <ul class="footer-links-list">
+              <li><a href="#home" class="footer-link">Home</a></li>
+              <li><a href="#about" class="footer-link">About</a></li>
+              <li><a href="#skills" class="footer-link">Skills</a></li>
+              <li><a href="#projects" class="footer-link">Projects</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-nav-title">DIRECT CONTACT</div>
+            <p class="text-secondary small mb-2">Available for software houses, startups &amp; freelance opportunities.</p>
+            <a href="#contact" class="btn-outline-futuristic btn-sm-action">
+              Get in Touch <i class="fa-solid fa-paper-plane"></i>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            &copy; 2026 Aleena Shafiq. All Rights Reserved.
+          </div>
+          <div>
+            Crafted with HTML5, CSS3, JavaScript, jQuery &amp; Bootstrap.
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top floating button -->
+    <a href="#home" id="backToTop" class="back-to-top" aria-label="Back to Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+  </div> <!-- End content-wrapper -->
+
+  <!-- ================= SCRIPTS ================= -->
+  <!-- jQuery 3.7.1 -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
