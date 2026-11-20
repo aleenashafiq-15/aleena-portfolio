@@ -63,11 +63,15 @@ pt/
 
 5. **Skills & Technologies & Professional Strengths**:
    - Categorized glass cards:
-     - **Web Development**: HTML5, CSS3, JavaScript, jQuery, Bootstrap
-     - **UI/UX**: Figma, Prototyping, Responsive Web Design, Design Systems
-     - **CMS**: WordPress, Theme Customization, Plugin Management
-     - **Version Control**: Git, GitHub, Collaborative Workflows
-     - **Design & Productivity**: Canva AI, MS Word, PowerPoint, Excel
+     - **Frontend Development**: HTML5 & CSS3, JavaScript, Bootstrap & jQuery
+     - **Web Technologies**: XML & JSON
+     - **WordPress & E-commerce**: WordPress Website Development, WooCommerce, WordPress SEO & Rank Math
+     - **Website Management & Deployment**: Website Publishing & Deployment, Git & GitHub
+     - **UI/UX Design**: Figma
+     - **Office Applications**: MS Office
+     - **SEO & Digital Marketing**: SEO (Keyword Research, On-Page SEO, Off-Page SEO & Technical SEO), Google Search Indexing
+     - **AI Tools & Creative Skills**: AI Video & Image Generation, AI-Assisted Logo, Poster, Pamphlet & Flyer Design, AI Content Creation
+     - **Professional Skills**: Management Skills, Problem-Solving Skills
    - 7 Professional strengths: Communication, Teamwork & Collaboration, Time Management, Problem Solving, Creativity, Adaptability, and Attention to Detail.
 
 6. **Selected Projects Showcase**:
@@ -89,7 +93,7 @@ pt/
    - 5-Step Process: `01 — DISCOVER`, `02 — PLAN`, `03 — DESIGN`, `04 — DEVELOP`, `05 — REFINE`.
 
 8. **Work Experience & Education**:
-   - Glowing vertical purple timeline featuring **Home Tutor (3 Years)** and **School Teacher (6 Months)** detailing transferable communication and organization skills.
+   - Glowing vertical purple timeline featuring **Home Tutor (3 Years)** and **School Teacher (1 Year)** detailing transferable communication, computer education, and organization skills.
    - Education cards highlighting **Diploma in Software Engineering (Aptech Karachi, In Progress)**, **Intermediate (Pre-Engineering)**, and **Matriculation (Computer Science)**.
 
 9. **Contact & Footer**:

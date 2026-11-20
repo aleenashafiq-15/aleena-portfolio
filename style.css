@@ -1160,12 +1160,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color: var(--text-primary);
   transition: all var(--transition-fast);
+  max-width: 100%;
+  line-height: 1.45;
 }
 
 .tech-badge i {
   font-size: 1rem;
   color: var(--cyan-accent);
   transition: transform var(--transition-fast);
+  flex-shrink: 0;
 }
 
 .tech-badge:hover {

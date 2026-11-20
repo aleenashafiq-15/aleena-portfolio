@@ -293,6 +293,7 @@ $(document).ready(function () {
       $contactForm[0].reset();
 
       setTimeout(() => {
+        alert("Thank you for contact me!");
         $successAlert.fadeOut();
       }, 6000);
     }, 1200);
